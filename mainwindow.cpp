@@ -30,8 +30,11 @@ void MainWindow::resizeEvent(QResizeEvent *event)
 	QRect newgeo;
 	newgeo.setHeight(event->size().height());
 	newgeo.setWidth(event->size().width());
-	ui->gridLayout->setGeometry(newgeo);
-	ui->gridLayoutWidget->setGeometry(newgeo);
+    QRect newwig;
+    newwig.setHeight(event->size().height()-25);
+	newwig.setWidth(event->size().width());
+	ui->gridLayout->setGeometry(newwig);
+	ui->gridLayoutWidget->setGeometry(newwig);
 }
 
 QString MainWindow::genlatex()

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>350</width>
+    <width>355</width>
     <height>545</height>
    </rect>
   </property>
@@ -42,48 +42,6 @@
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
-     <item row="4" column="0">
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QRadioButton" name="radioButton_lines">
-         <property name="text">
-          <string>|data|</string>
-         </property>
-         <property name="checked">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_flower">
-         <property name="text">
-          <string>{data}</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_b1">
-         <property name="text">
-          <string>(data)</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_b2">
-         <property name="text">
-          <string>[data]</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QRadioButton" name="radioButton_none">
-         <property name="text">
-          <string>data</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
      <item row="0" column="0">
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
@@ -117,7 +75,7 @@
       </layout>
      </item>
      <item row="3" column="0">
-      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,10,0,0">
+      <layout class="QVBoxLayout" name="verticalLayout" stretch="0,10,0,0,0">
        <property name="sizeConstraint">
         <enum>QLayout::SetFixedSize</enum>
        </property>
@@ -132,7 +90,7 @@
         <widget class="matTableView" name="tableView_edit"/>
        </item>
        <item>
-        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,0,0,0">
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="1,1,1,1">
          <item>
           <widget class="QLabel" name="label_matout">
            <property name="text">
@@ -173,6 +131,48 @@
         </layout>
        </item>
        <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <item>
+          <widget class="QRadioButton" name="radioButton_lines">
+           <property name="text">
+            <string>|data|</string>
+           </property>
+           <property name="checked">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_flower">
+           <property name="text">
+            <string>{data}</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_b1">
+           <property name="text">
+            <string>(data)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_b2">
+           <property name="text">
+            <string>[data]</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QRadioButton" name="radioButton_none">
+           <property name="text">
+            <string>data</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
         <widget class="QTextBrowser" name="textBrowser_output">
          <property name="maximumSize">
           <size>
@@ -192,7 +192,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>350</width>
+     <width>355</width>
      <height>23</height>
     </rect>
    </property>
